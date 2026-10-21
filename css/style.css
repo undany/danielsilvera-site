@@ -1,35 +1,56 @@
 body {
-    max-width: 720px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 32px 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 17px;
-    line-height: 1.65;
-    color: #222222;
+    padding: 40px 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2b2b2b;
     background-color: #fafafa;
 }
 
-h1, h2, h3 {
-    font-weight: 600;
-    letter-spacing: -0.02em;
+h1 {
+    font-size: 1.85rem;
+    font-weight: 500;
+    margin-top: 40px;
+    letter-spacing: -0.01em;
     color: #111111;
 }
 
-h1 {
-    margin-top: 48px;
-    font-size: 2rem;
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 32px;
+    color: #111111;
 }
 
+/* Base Body Links */
 a {
-    color: #2b5797;
+    color: #2b2b2b;
+    border-bottom: 1px solid #ccc;
     text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 a:hover {
-    text-decoration: underline;
+    border-bottom-color: #4a5d4e;
+    color: #4a5d4e;
 }
 
+/* Navigation Menu styling */
 nav p {
     font-size: 15px;
-    letter-spacing: 0.03em;
+    color: #a0a0a0; /* Divider pipe color */
+    letter-spacing: 0.02em;
+}
+
+nav a {
+    color: #4a5d4e; /* Soft Gray-Green */
+    border-bottom: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #2e3b31; /* Slightly darker gray-green on hover */
+    text-decoration: underline;
 }
