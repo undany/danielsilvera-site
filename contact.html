@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Daniel Silvera</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -25,12 +25,21 @@
 
 <p>
     <strong>Email:</strong> <a href="mailto:hello@danielsilvera.com">hello@danielsilvera.com</a><br>
-    <strong>WhatsApp:</strong> <a href="https://wa.me/50765769000" target="_blank">+507 6576-9000</a>
+    <strong>WhatsApp:</strong> <a href="#" id="wa-link" target="_blank" rel="noopener">Send a Direct Message</a>
 </p>
 
 <p>
     <a href="index.html">← Back to Home</a>
 </p>
+
+<script>
+    // Assembles the link only when a user clicks, completely hiding the number from HTML scrapers
+    document.getElementById('wa-link').addEventListener('click', function(e) {
+        var country = '507';
+        var phone = '65769000';
+        this.href = 'https://wa.me/' + country + phone;
+    });
+</script>
 
 </body>
 </html>
