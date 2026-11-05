@@ -1,101 +1,44 @@
-/* Import Jost (Futura alternative) and Inter (body legibility) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Jost:wght@300;400;500;600&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Daniel Silvera</title>
+    <link rel="stylesheet" href="css/style.css?v=1.1">
+</head>
+<body>
 
-body {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 40px 24px;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #2b2b2b;
-    background-color: #fafafa;
-}
+<nav>
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="mindfulness.html">Mindfulness</a> |
+        <a href="consulting.html">Consulting</a> |
+        <a href="blog/index.html">Writing</a> |
+        <a href="contact.html">Contact</a>
+    </p>
+</nav>
 
-/* Geometric Journal Title Style */
-h1 {
-    font-family: 'Jost', sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.12em; /* Gives the light, spaced editorial look */
-    margin-top: 40px;
-    color: #111111;
-}
+<h1>About Daniel</h1>
 
-h2 {
-    font-family: 'Jost', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-top: 32px;
-    color: #333333;
-}
+<img src="assets/images/profile.jpg" alt="Daniel Silvera" class="profile-image">
 
-/* Body Links */
-a {
-    color: #2b2b2b;
-    border-bottom: 1px solid #ccc;
-    text-decoration: none;
-    transition: border-color 0.2s ease, color 0.2s ease;
-}
+<p>
+I am a Psychology student, certified Mindfulness Teacher, Operations Consultant, and ATP-certified Nature Guide.
+</p>
 
-a:hover {
-    border-bottom-color: #4a5d4e;
-    color: #4a5d4e;
-}
+<p>
+My work explores attention, awareness, decision making, human performance, and systems thinking.
+</p>
 
-/* Navigation Menu */
-nav p {
-    font-family: 'Jost', sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #a0a0a0;
-}
+<p>
+Through consulting, writing, mindfulness practice, and field experience, I investigate how individuals and organizations function at their best.
+</p>
 
-nav a {
-    color: #4a5d4e; /* Soft gray-green */
-    border-bottom: none;
-    font-weight: 500;
-}
+<p>
+    <a href="index.html">← Back to Home</a>
+</p>
 
-nav a:hover {
-    color: #2e3b31;
-    text-decoration: underline;
-}
-
-/* Dynamic Footer Style */
-footer {
-    margin-top: 3rem;
-    padding-top: 1rem;
-    font-size: 0.875rem;
-    color: #666666;
-    text-align: left;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.875rem;
-    color: #666666;
-}
-
-/* Editorial Image Styles */
-.profile-image {
-    width: 100%;
-    max-width: 340px;
-    height: auto;
-    border-radius: 4px;
-    margin: 24px 0;
-    display: block;
-}
-
-.nature-banner {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin: 24px 0;
-    display: block;
-}
+<script src="js/footer.js?v=1.3"></script>
+</body>
+</html>
