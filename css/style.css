@@ -80,3 +80,12 @@ footer p {
     font-size: 0.875rem;
     color: #666666;
 }
+/* Responsive Image Styling */
+.featured-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 24px 0;
+    display: block;
+}
