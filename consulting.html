@@ -31,8 +31,21 @@
 </p>
 
 <p>
-    <a href="https://forms.gle/KYe9yb2KGvkmP4ic6" target="_blank">Agendar Sesión de Diagnóstico →</a>
+    <span id="email-container"></span>
 </p>
+
+<script>
+    (function() {
+        var user = 'contact';
+        var domain = 'danielsilvera.com';
+        var label = 'Enviar correo para consulta →';
+        var container = document.getElementById('email-container');
+        var link = document.createElement('a');
+        link.href = 'mailto:' + user + '@' + domain;
+        link.textContent = label;
+        container.appendChild(link);
+    })();
+</script>
 
 <br>
 
