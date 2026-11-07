@@ -70,6 +70,20 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Destacado elegante para el enlace de Mindfulness */
+nav a.nav-highlight,
+.nav-highlight {
+    color: #E07A5F !important; /* Naranja terracota/tierra elegante */
+    font-weight: bold;
+    border-bottom: none;
+}
+
+nav a.nav-highlight:hover,
+.nav-highlight:hover {
+    color: #F4A261 !important; /* Tono cálido al pasar el cursor */
+    text-decoration: underline;
+}
+
 /* Dynamic Footer Style */
 footer {
     margin-top: 3rem;
@@ -86,11 +100,12 @@ footer p {
 }
 
 /* Editorial Image Styles */
+.profile-img,
 .profile-image {
     width: 100%;
     max-width: 340px;
     height: auto;
-    border-radius: 4px;
+    border-radius: 8px;
     margin: 24px 0;
     display: block;
 }
@@ -102,13 +117,4 @@ footer p {
     border-radius: 4px;
     margin: 24px 0;
     display: block;
-}
-/* Destacado elegante para el enlace de Mindfulness */
-.nav-highlight {
-    color: #E07A5F; /* Naranja terracota/tierra elegante */
-    font-weight: bold;
-}
-
-.nav-highlight:hover {
-    color: #F4A261; /* Tono cálido al pasar el cursor */
 }
