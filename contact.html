@@ -21,10 +21,14 @@
 
 <h1>Contact</h1>
 
-<p>Daniel Silvera<br>Panama</p>
+<p>Interested in a mindfulness experience, consulting inquiry, collaboration, or simply getting in touch?</p>
+
+<p>I welcome conversations related to mindfulness, nature-based experiences, operations consulting, writing, and living systems.</p>
+
+<p>Based in Boquete, Panama.</p>
 
 <p>
-    <strong>Email:</strong> <a href="mailto:hello@danielsilvera.com">hello@danielsilvera.com</a><br>
+    <strong>Email:</strong> <span id="email-container"></span><br>
     <strong>WhatsApp:</strong> <a href="#" id="wa-link" target="_blank" rel="noopener">Send a Direct Message</a>
 </p>
 
@@ -33,7 +37,18 @@
 </p>
 
 <script>
-    // Assembles the link only when a user clicks, completely hiding the number from HTML scrapers
+    // Obfuscates and dynamically renders the email link
+    (function() {
+        var user = 'contact';
+        var domain = 'danielsilvera.com';
+        var container = document.getElementById('email-container');
+        var link = document.createElement('a');
+        link.href = 'mailto:' + user + '@' + domain;
+        link.textContent = user + '@' + domain;
+        container.appendChild(link);
+    })();
+
+    // Assembles the WhatsApp link upon click to prevent scraping of phone number
     document.getElementById('wa-link').addEventListener('click', function(e) {
         var country = '507';
         var phone = '65769000';
@@ -41,6 +56,6 @@
     });
 </script>
 
-<script src="js/footer.js"></script>
+<script src="js/footer.js?v=1.3"></script>
 </body>
 </html>
